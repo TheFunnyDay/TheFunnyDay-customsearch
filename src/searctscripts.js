@@ -4,5 +4,5 @@ $("#background").css({
 
 var q = "thefunnyday github";
 document.getElementById('submit').onclick = function() {
-    window.open('http://google.com/search?q='+q);
+    window.open('https://google.com/search?q='+q);
 };
