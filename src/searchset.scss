@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#app {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    #blured {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.5);
+        #settings {
+            min-width: 500px;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 100px;
+            .set {
+                margin-top: 30px;
+                input[type="text"], textarea {
+                    background: rgba(0, 0, 0, 0.6);
+                    color: white;
+                    border: 0;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                input {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+            .see-bg{
+                width: 100%;
+                height: 150px;
+                border-radius: 10px;
+                background-color: black;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // h1{text-align: center; position: relative; top: 60px;color: white;}
+            }
+
+            #save{
+                background-color: #222222;
+                cursor: pointer;
+                user-select: none;
+                text-align: center;
+                width: 200px;
+                padding-top: 10px;
+                margin-top: 20px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+#copyright{
+    position: fixed;
+    float: left;
+    bottom: 0px;
+    width: 100%;
+    height: 21px;
+    text-align: right;
+    backdrop-filter: blur(10px);
+    background:rgba(0, 0, 0, 0.6);
+    p {
+        font-size: 11px;
+        margin-top: 2px;
+        margin-right: 10px;
+        color: white;
+    }
+}
