@@ -15,13 +15,13 @@ save.onclick = function(){
 
 
 searchGoogle.onclick = function(){
-    localStorage.setItem('csearchEng', 'https://google.com');
+    localStorage.setItem('csearchEng', 'https://google.com/search');
 };
 searchYandex.onclick = function(){
     localStorage.setItem('csearchEng', 'https://yandex.ru');
 };
 searchDuckDuckGo.onclick = function(){
-    localStorage.setItem('csearchEng', 'https://duckduckgo.com/');
+    localStorage.setItem('csearchEng', 'https://duckduckgo.com');
 };
 
 $('.buttoneng').on('click', this, function(){
@@ -29,7 +29,7 @@ $('.buttoneng').on('click', this, function(){
     $(this).addClass('active');
 });
 function check() {
-    if (localStorage.getItem('csearchEng') == 'https://google.com') {
+    if (localStorage.getItem('csearchEng') == 'https://google.com/search') {
         $('#searchGoogle').css({
             'background' : '#830000'
         })
@@ -41,7 +41,7 @@ function check() {
         })
     };
 
-    if (localStorage.getItem('csearchEng') == 'https://duckduckgo.com/') {
+    if (localStorage.getItem('csearchEng') == 'https://duckduckgo.com') {
         $('#searchDuckDuckGo').css({
             'background' : '#830000'
         })
