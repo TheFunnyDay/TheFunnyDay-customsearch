@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import './style/settings.scss'
 
-$('body').html(`
+document.querySelector("body").innerHTML = `
 <div id="app">
 <a href="./index.html"><div id="backbut"></div></a>
 
@@ -22,15 +22,18 @@ $('body').html(`
             <div id="searchYandex" class="buttoneng">Yandex</div>
             <div id="searchDuckDuckGo" class="buttoneng">DuckDuckGo</div>
         </div>
-        
+    
         <div id="save">Сохранить</div>
+        <div class="set">
+        <div id="userAgent"></div>
+        </div>
     </div>
 </div>
 </div>
 <a href="https://thefunnyday.github.io/">
 <div id="copyright"><p>by TheFunnyDay</p></div>
 </a>
-`)
+`;
 
 
 $("#app").css({
@@ -83,3 +86,5 @@ function check() {
     }
 }
 check();
+
+document.querySelector("#userAgent").innerHTML = navigator.userAgent;

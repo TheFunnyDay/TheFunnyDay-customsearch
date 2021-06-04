@@ -65,6 +65,7 @@ const config = {
       title: 'Custom Search',
       appMountId: 'app',
       filename: 'index.html',
+      template:'html/index.html',
       excludeChunks: ['settings'],
       chunks: ['main'],
     }),
@@ -72,6 +73,7 @@ const config = {
       title: 'Settings',
       appMountId: 'settings',
       filename: 'searchset.html',
+      template: 'html/settings.html',
       chunks: ['settings'],
 
     }),
