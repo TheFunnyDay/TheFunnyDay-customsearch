@@ -64,16 +64,14 @@ body {
                 float: left;
                 width: 100%;
                 margin-top: 30px;
-                input[type="text"], textarea {
+                input {
+                    width: 100%;
+                    margin-top: 20px;
                     background: rgba(0, 0, 0, 0.6);
                     color: white;
                     border: 0;
                     padding: 10px;
                     border-radius: 5px;
-                }
-                input {
-                    width: 100%;
-                    margin-top: 20px;
                 }
             }
             .see-bg{
