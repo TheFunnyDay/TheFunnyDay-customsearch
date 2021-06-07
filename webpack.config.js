@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: {
-    main: './src/index.js',
-    settings: './src/settings.js'
+    main: './src/scripts/index.js',
+    settings: './src/scripts/settings.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,9 +25,11 @@ const config = {
           'style-loader',
           {
             loader: 'css-loader',
+            
             options: {
               importLoaders: 1,
-              modules: true
+              modules: true,
+              injectType: 'singletonStyleTag'
             }
           }
         ]
@@ -66,7 +68,7 @@ const config = {
       appMountId: 'app',
       filename: 'index.html',
       template:'html/index.html',
-      excludeChunks: ['settings'],
+      // excludeChunks: ['settings'],
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
